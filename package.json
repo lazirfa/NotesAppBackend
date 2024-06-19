@@ -1,0 +1,35 @@
+{
+  "name": "NOTE-APP-BACKEND",
+  "version": "1.0.0",
+  "description": "submission dicoding",
+  "main": "index.js",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lazirfa/BOOKSHELF"
+  },
+  "author": "lazirfa",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.9",
+    "@hapi/jwt": "^3.2.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "hapi": "^18.1.0",
+    "joi": "^17.13.1",
+    "nanoid": "^3.3.4",
+    "node-pg-migrate": "^7.4.0",
+    "pg": "^8.12.0"
+  }
+}
